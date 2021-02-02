@@ -22,6 +22,12 @@
  	public function logactivities($param){
        $query = $this->db->insert(db_prefix().'activities', $param);
        return $query;
+	}
+
+
+	public function get_package(){
+		$query =  $this->db->get(db_prefix().'package')->result_array();
+		return $query;
 	}	
 
 }

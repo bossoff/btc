@@ -87,7 +87,8 @@ class request extends CI_controller{
 
 		$data = [
 			'page_name' => 'investment', 
-			'page_title' => 'Investment Plan'
+			'page_title' => 'Investment Plan',
+			'packages' => $this->Crud->get_package()
 		];
 
 		$this->load->view('front/index', $data);	

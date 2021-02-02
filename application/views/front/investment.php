@@ -58,28 +58,73 @@
                               <div class="row">
                                     <div class="col-md-6 col-md-offset-3">
                                           <ul class="nav nav-tabs ucap">
-                                                <li class="active"><a href="#tab1" data-toggle="tab">USD</a></li>
-                                                <!-- <li><a href="#tab2" data-toggle="tab">EUR</a></li>
-                                                <li><a href="#tab3" data-toggle="tab">GBP</a></li>
-                                                <li><a href="#tab4" data-toggle="tab">YEN</a></li>
-                                          </ul> -->
+                                                <li class="active"><a href="#tab1" data-toggle="tab">Choose Plan</a></li>
+                                          </ul>
                                     </div>
                               </div>
+                              <div class="inline-form text-center">
+                        <div class="row">
+                              <div class="col-md-8 col-md-offset-2">
+                              <h4>Make a Custome Investment</h4>
+                                    <div class="clearfix">
+
+                                                <div class="form-field form-m-bttm">
+                                                      <input name="btc-amount" placeholder="BTC Amount" class="form-control required" aria-required="true" type="text">
+                                                </div>
+
+                                                <div class="form-field form-m-bttm">
+                                                      <input name="btc-amount" placeholder="Return BTC Amount" class="form-control required" aria-required="true" type="text">
+                                                </div>
+
+                                                <!-- <div class="form-field form-m-bttm">
+                                                      <select name="quote-request-hear" class="form-control" aria-invalid="false">
+                                                            <option selected="selected" value="btc">(BTC)</option>
+                                                      </select>
+                                                </div> -->
+                                                <div class="form-field form-button form-m-bttm">
+                                                      <a href="#" class="btn btn-alt">Invest Now!</a>
+                                                </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
                               <div class="gaps size-2x"></div>
                               <!-- Tab panes -->
                               <div class="tab-content no-pd">
                                     <div class="tab-pane fade in active" id="tab1">
                                           <div class="row">
+                                          <?php
+                                                foreach ($packages as $package) { ?>
+                                                           
+                                                      
                                                 <div class="col-md-3 col-sm-6 res-m-bttm">
-                                                      <div class="pricing-box ucap shadow">
-                                                            <span class="pricing-title">get 0.0656 btc</span>
+                                                      <?php 
+                                                            if($package['id'] == 4){
+                                                                  $active = 'highlited';
+                                                                  $btn = 'inline';
+                                                            }else{
+                                                                  $active = '';
+                                                                  $btn = 'outline';
+                                                            }
+                                                      ?>
+                                                      <div class="pricing-box <?=$active;?> ucap shadow">
+                                                            <span class="pricing-title"><?=$package['name'];?></span>
                                                             <span class="pricing-sub-title">For</span>
+                                                            <span class="pricing-title"><?=$package['btc_price'];?></span>
+                                                            <!-- <span class="pricing-sap"></span> -->
+                                                            <span>0.<?=$package['percentage'];?>/<?=$package['durations'];?></span>
+                                                            <!-- <span><?=$package['percentage'];?></span> -->
                                                             <span class="pricing-sap"></span>
-                                                            <span class="pricing-price">$ 100.00</span>
-                                                            <a href="#" class="btn btn-xs btn-outline btn-color">Buy</a>
+                                                            <span class="pricing-price" style="font-size: 15px;">Worth $<?=$package['price'];?>.00</span>
+                                                            <a href="<?=base_url();?>request/<?=$package['id'];?>/invest" class="btn btn-xs btn-<?=$btn;?> btn-color">Start Investment</a>
                                                       </div>
                                                 </div>
-                                                <div class="col-md-3 col-sm-6 res-m-bttm">
+
+                                          <?php } ?>
+                                              
+
+
+                                               <!--  <div class="col-md-3 col-sm-6 res-m-bttm">
                                                       <div class="pricing-box highlited light ucap shadow">
                                                             <span class="pricing-title">get 0.0656 btc</span>
                                                             <span class="pricing-sub-title">For</span>
@@ -105,152 +150,13 @@
                                                             <span class="pricing-price">$ 1000.00</span>
                                                             <a href="#" class="btn btn-xs btn-outline btn-color">Buy</a>
                                                       </div>
-                                                </div>
+                                                </div> -->
                                           </div>
                                     </div>
-                                    <div class="tab-pane fade" id="tab2">
-                                          <div class="row">
-                                                <div class="col-md-3 col-sm-6 res-m-bttm">
-                                                      <div class="pricing-box ucap shadow">
-                                                            <span class="pricing-title">get 0.0656 btc</span>
-                                                            <span class="pricing-sub-title">For</span>
-                                                            <span class="pricing-sap"></span>
-                                                            <span class="pricing-price">€ 100.00</span>
-                                                            <a href="#" class="btn btn-xs btn-outline btn-color">Buy</a>
-                                                      </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 res-m-bttm">
-                                                      <div class="pricing-box highlited light ucap shadow">
-                                                            <span class="pricing-title">get 0.0656 btc</span>
-                                                            <span class="pricing-sub-title">For</span>
-                                                            <span class="pricing-sap"></span>
-                                                            <span class="pricing-price">€ 200.00</span>
-                                                            <a href="#" class="btn btn-xs btn-outline btn-alt">Buy</a>
-                                                      </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 res-m-bttm">
-                                                      <div class="pricing-box ucap shadow">
-                                                            <span class="pricing-title">get 0.0656 btc</span>
-                                                            <span class="pricing-sub-title">For</span>
-                                                            <span class="pricing-sap"></span>
-                                                            <span class="pricing-price">€ 500.00</span>
-                                                            <a href="#" class="btn btn-xs btn-outline btn-color">Buy</a>
-                                                      </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 res-m-bttm">
-                                                      <div class="pricing-box ucap shadow">
-                                                            <span class="pricing-title">get 0.0656 btc</span>
-                                                            <span class="pricing-sub-title">For</span>
-                                                            <span class="pricing-sap"></span>
-                                                            <span class="pricing-price">€ 1000.00</span>
-                                                            <a href="#" class="btn btn-xs btn-outline btn-color">Buy</a>
-                                                      </div>
-                                                </div>
-                                          </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="tab3">
-                                          <div class="row">
-                                                <div class="col-md-3 col-sm-6 res-m-bttm">
-                                                      <div class="pricing-box ucap shadow">
-                                                            <span class="pricing-title">get 0.0656 btc</span>
-                                                            <span class="pricing-sub-title">For</span>
-                                                            <span class="pricing-sap"></span>
-                                                            <span class="pricing-price">£ 100.00</span>
-                                                            <a href="#" class="btn btn-xs btn-outline btn-color">Buy</a>
-                                                      </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 res-m-bttm">
-                                                      <div class="pricing-box highlited light ucap shadow">
-                                                            <span class="pricing-title">get 0.0656 btc</span>
-                                                            <span class="pricing-sub-title">For</span>
-                                                            <span class="pricing-sap"></span>
-                                                            <span class="pricing-price">£ 200.00</span>
-                                                            <a href="#" class="btn btn-xs btn-outline btn-alt">Buy</a>
-                                                      </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 res-m-bttm">
-                                                      <div class="pricing-box ucap shadow">
-                                                            <span class="pricing-title">get 0.0656 btc</span>
-                                                            <span class="pricing-sub-title">For</span>
-                                                            <span class="pricing-sap"></span>
-                                                            <span class="pricing-price">£ 500.00</span>
-                                                            <a href="#" class="btn btn-xs btn-outline btn-color">Buy</a>
-                                                      </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 res-m-bttm">
-                                                      <div class="pricing-box ucap shadow">
-                                                            <span class="pricing-title">get 0.0656 btc</span>
-                                                            <span class="pricing-sub-title">For</span>
-                                                            <span class="pricing-sap"></span>
-                                                            <span class="pricing-price">£ 1000.00</span>
-                                                            <a href="#" class="btn btn-xs btn-outline btn-color">Buy</a>
-                                                      </div>
-                                                </div>
-                                          </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="tab4">
-                                          <div class="row">
-                                                <div class="col-md-3 col-sm-6 res-m-bttm">
-                                                      <div class="pricing-box ucap shadow">
-                                                            <span class="pricing-title">get 0.0656 btc</span>
-                                                            <span class="pricing-sub-title">For</span>
-                                                            <span class="pricing-sap"></span>
-                                                            <span class="pricing-price">¥ 100.00</span>
-                                                            <a href="#" class="btn btn-xs btn-outline btn-color">Buy</a>
-                                                      </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 res-m-bttm">
-                                                      <div class="pricing-box highlited light ucap shadow">
-                                                            <span class="pricing-title">get 0.0656 btc</span>
-                                                            <span class="pricing-sub-title">For</span>
-                                                            <span class="pricing-sap"></span>
-                                                            <span class="pricing-price">¥ 200.00</span>
-                                                            <a href="#" class="btn btn-xs btn-outline btn-alt">Buy</a>
-                                                      </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 res-m-bttm">
-                                                      <div class="pricing-box ucap shadow">
-                                                            <span class="pricing-title">get 0.0656 btc</span>
-                                                            <span class="pricing-sub-title">For</span>
-                                                            <span class="pricing-sap"></span>
-                                                            <span class="pricing-price">¥ 500.00</span>
-                                                            <a href="#" class="btn btn-xs btn-outline btn-color">Buy</a>
-                                                      </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-6 res-m-bttm">
-                                                      <div class="pricing-box ucap shadow">
-                                                            <span class="pricing-title">get 0.0656 btc</span>
-                                                            <span class="pricing-sub-title">For</span>
-                                                            <span class="pricing-sap"></span>
-                                                            <span class="pricing-price">¥ 1000.00</span>
-                                                            <a href="#" class="btn btn-xs btn-outline btn-color">Buy</a>
-                                                      </div>
-                                                </div>
-                                          </div>
-                                    </div>
+                              
                               </div>
                         </div>
-                  <div class="inline-form text-center">
-                        <div class="row">
-                              <div class="col-md-8 col-md-offset-2">
-                              <h4>Buy a different amount </h4>
-                                    <div class="clearfix">
-                                                <div class="form-field form-m-bttm">
-                                                      <input name="btc-amount" placeholder="BTC Amount" class="form-control required" aria-required="true" type="email">
-                                                </div>
-                                                <div class="form-field form-m-bttm">
-                                                      <select name="quote-request-hear" class="form-control" aria-invalid="false">
-                                                            <option value="usd">US Dollar (USD)</option>
-                                                            <option value="euro">European (Euro)</option>
-                                                      </select>
-                                                </div>
-                                                <div class="form-field form-button form-m-bttm">
-                                                      <a href="#" class="btn btn-alt">Buy Now</a>
-                                                </div>
-                                    </div>
-                              </div>
-                        </div>
-                  </div>
+                   
                   </div>
             </div><!--End Pricing Tab -->
             
