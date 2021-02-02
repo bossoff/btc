@@ -1,0 +1,72 @@
+// /// VARIABLES /// //
+// Theme Color Define
+$primary-color: 	#f7921a;
+$secondary-color:	#e17804;
+$second-color-two:	#ff8a00;
+$alternet-color:	#999;
+$default-color: 	#3c3c3c;
+
+$bg-light:			#fff;
+$bg-dark:			#222;
+$bg-grey:			#f8f8f8;
+$bg-dark-grey:		#efefef;
+$bg-trans:			transparent;
+$bg-color-light:	#fff1e0;
+
+$heading-color:		#333;
+
+$bg-primary:		$primary-color;
+$bg-secondary:		$bg-color-light;
+$bg-alternet:		$alternet-color;
+
+$topbar-color:		#3c3c3c;
+$topbar-bgcolor:	#f8f8f8;
+
+$header-color: 		#36454e;
+$header-bgcolor: 	#fff;
+
+$header-btn-color:			#fff;
+$header-btn-bgcolor:		$primary-color;
+$header-btn-color-alt:		#fff;
+$header-btn-bgcolor-alt:	$secondary-color;
+
+$footer-color: 		#fff;
+$footer-bgcolor: 	#0f152b;
+
+$copyright-color: 	#fff;
+$copyright-bgcolor: #0d1120;
+
+
+$font-primary: "OpenSans", sans-serif;
+$font-secondary: "Quicksand", sans-serif;
+
+$font-size: 16px;
+$font-weight: 300;
+$font-bold: 300;
+$font-height: 1.75;
+
+$heading-color: #373e45;
+$heading-color-alt: $primary-color;
+
+$nav-color: $default-color;
+$nav-color-over: $primary-color;
+$nav-bgcolor: tranparent;
+$nav-bgcolor-over: tranparent;
+$nav-font-family: $font-secondary;
+$nav-font-weight: 700;
+$nav-font-size: 14px;
+
+$radius: 5px;
+$radius-btn: 4px;
+
+$space: 90px;
+$space-sm: $space*0.50;
+$space-md: $space*0.75;
+$space-lg: $space*1.50;
+
+$mgpd: 20px;
+$mgpd-xs: $mgpd/2;
+$mgpd-sm: $mgpd*0.75;
+$mgpd-md: $mgpd*1.5;
+$mgpd-lg: $mgpd*3;
+$mgpd-gap: $mgpd*2.25;

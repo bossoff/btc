@@ -1,0 +1,729 @@
+/*!
+Template :	CryptoCoin @by Softnio
+Preset   :	Cyan
+Version	 :	1.0.1
+Updated	 :	01.29.2018
+*/
+// Theme Color Define
+$primary-color: 	#159fff;
+$secondary-color:	#159fff;
+$second-color-two:	#0a4881;
+$bg-color-light:	rgba($primary-color, .08);
+
+$bg-primary:		$primary-color;
+$bg-secondary:		$secondary-color;
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	&.color-secondary {
+		color: $secondary-color;
+	}
+	&.color-primary {
+		color: $primary-color;
+	}
+}
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span{
+	color: $primary-color;
+}
+
+.heading-section{
+	&.color-secondary {
+		color: $secondary-color;
+	}
+	&.color-primary {
+		color: $primary-color;
+	}
+}
+
+.heading-sm-lead, .heading-md-lead {
+	&.color-primary {
+		color: $primary-color;
+	}
+	&.color-secondary {
+		color: $secondary-color;
+	}
+}
+.with-line {
+	&::after {
+		background-color: $primary-color;
+	}
+}
+blockquote {
+	p:last-child strong {
+		color: $primary-color;
+	}
+}
+a{
+	color: $primary-color;
+	&:hover, &:focus, &:active{
+		color: $secondary-color;
+	}
+}
+.color-primary {
+	color: $primary-color;
+}
+.color-secondary {
+	color: $secondary-color;
+}
+.bg-primary {
+	background: $bg-primary;
+}
+.bg-secondary {
+	background: $bg-secondary;
+}
+.bg-light-primary {
+	background-color: rgba($bg-primary, .1);
+}
+.bg-light-secondary {
+	background-color: rgba($bg-secondary, .1);
+}
+.accordion {
+	.panel-title {
+		a {
+			color: $primary-color;
+		}
+	}
+	&.filled {
+		.panel-title { 
+			a {
+				color: $primary-color;
+			}
+		}
+	}
+}
+.icon-box {
+	color: $primary-color;
+	&.sqaure, &.round, &.circle {
+		border-color: $secondary-color;
+	}
+	&.icon-bg {
+		background-color: $primary-color;
+	}
+	&.icon-bg-alt {
+		background-color: $primary-color;
+	}
+	&.light {
+		&.icon-bg {
+			color: $primary-color;
+		}
+	}
+	&.style-s1, &.style-s2  {
+		background-color: $secondary-color;
+	}
+	&.style-s2 {
+		background-color: $secondary-color;
+	}
+	&.style-s3, &.style-s4 {
+		border-color: $primary-color;
+		color: $primary-color;
+	}
+	&.style-s4 {
+		border-color: $secondary-color;
+		color: $secondary-color;
+	}
+}
+.image-slice {
+	.section-bg:not(.section-bg-r):after {
+		background: $primary-color;
+	}
+	.section-bg.section-bg-alt:not(.section-bg-r):after {
+		background: $secondary-color;
+	}
+}
+.has-bg {
+	&.bg-primary:after {
+		background-color: $primary-color;
+	}
+	&.bg-secondary:after {
+		background-color: $secondary-color;
+	}
+}
+.tab-custom {
+	.nav-tabs{
+		li:last-child a{
+			border-right-color: $primary-color;
+		}
+		li > a{
+			border: 1px solid $primary-color;
+		}
+		li.active > a, li.active > a:hover, li.active > a:focus, li > a:hover, li > a:focus{
+			background:$primary-color;
+			border-color: $primary-color;
+		}
+	}
+	
+}
+
+.feature-intro {
+	a.btn-link {
+		color: $primary-color;
+	}
+}
+.owl-dots{
+	.owl-dot{
+		border: 1px solid $primary-color;
+		&.active{
+			background: $primary-color;
+		}
+	}
+}
+.owl-theme{
+	.owl-nav{
+		.owl-prev, .owl-next{
+			color: $primary-color;
+			opacity: 1;
+			&:hover {
+				background: $primary-color;
+			}
+		}
+	}
+}
+.copyright{
+	.social li a{
+		&:hover, &:focus {
+			color: $primary-color;
+		}
+	}
+}
+.pagination{
+	li{
+		&.active{
+			a{
+				background: $primary-color;
+				border-color: $primary-color;
+			}
+		}
+		a{
+			color: $primary-color;
+			&:hover,&:focus{
+				background: $primary-color;
+				border-color: $primary-color;
+			}
+		}
+	}
+}
+.site-header {
+	.quote-btn {
+		.btn {
+			background-color: $primary-color;
+			border: 2px solid $primary-color;
+			&:hover {
+				border-color: $primary-color;
+				color:$primary-color;
+			}
+		}
+	}
+}
+// TopBar
+.topbar {
+	.social {
+		li a {
+			&:hover {
+				color: $primary-color;
+			}
+		}
+	}
+}
+.top-nav {
+	a{
+		&:hover, &:focus {
+			color: $primary-color;
+		}
+	}
+}
+.top-contact {
+	.fa {
+		border: 1px solid $primary-color;
+		color: $primary-color;
+	}
+	a {
+		&:hover {
+			color: $primary-color;
+		}
+	}
+}
+.header-top {
+	.social {
+		li a {
+			color: $primary-color;
+		}
+		&.social-s2 li a {
+			background: $primary-color;
+			border: 1px solid $primary-color;
+		}
+	}
+}
+.social {
+	&.social-s2 li a {
+		background: $primary-color;
+		border: 1px solid $primary-color;
+		&:hover {
+			color:$primary-color;
+		}
+	}
+	&.social-v2  {
+		li {
+			border: 1px solid $primary-color;
+		}
+	}
+}
+
+// MainNav
+.navbar-nav {
+	> li {
+		&.active > a, > a:hover, > a:focus {
+			color: $primary-color;
+			background: transparent;
+		}
+	}
+	.dropdown-menu{
+		li {
+			&:hover > a{
+				color: $primary-color;
+			}
+			&:hover.has-children:after{
+				border-left-color:$primary-color;
+			}
+		}
+		&.active > a, li > a:hover, li > a:focus {
+			color: $primary-color;
+		}
+		> .active > a, > .active > a:focus, > .active > a:hover {
+			color: $primary-color;
+		}
+	}
+}
+.site-header{
+	&.is-transparent{
+		.topbar {
+			a:not(.btn):hover {
+				color: $primary-color;
+			}
+			.social {
+				li a {
+					color: $primary-color;
+				}
+			}
+		}
+		.dropdown-menu{
+			li{
+				&:hover.has-children:after{
+					border-left-color:$primary-color;
+				}
+			}
+		}
+		&.has-fixed {
+			.navbar-nav > li.active > a, .navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+				color: $primary-color;
+			}
+			.navbar-nav > li > a
+			.navbar-nav > li > a:not(.btn)::after{
+				background-color: $primary-color;
+			}
+		}
+	}
+	&.header-dark{
+		.topbar {
+			background: darken($primary-color, 5%);
+			color: #fff;
+			.icon, .fa, a:hover {
+				color: $secondary-color;
+			}
+		}
+		.navbar{
+			background: $primary-color;
+		}
+	}
+	&.header-s2{
+		.navbar-nav{
+			li{
+				&:hover > a{
+					background: $primary-color;
+				}
+				a{
+					&:hover,&:focus{
+						background: $primary-color;
+					}
+				}
+			}
+			li.active{
+				> a{
+					background: $primary-color;
+				}
+			}
+			li.quote-btn{
+				.btn{
+					background: $primary-color;
+					border-color: $primary-color;
+					&:hover{
+						border-color: darken($primary-color, 12%);
+						background: darken($primary-color, 12%);
+					}
+				}
+			}
+			.dropdown-menu {
+				li{
+					&:hover > a{
+						color: $primary-color;
+					}
+					a{
+						&:hover{
+							color: $primary-color;
+						}
+					}
+				}
+					
+			}
+			.dropdown-menu{
+				.active{
+					a{
+						&:hover,&:focus{
+							color: $primary-color;
+						}
+					}
+				}
+			}
+		}
+		.navbar-collapse{
+			ul.nav{
+				background: $second-color-two;
+			}
+		}
+	}
+}
+
+.breadcrumb {
+	li:not(.active) a:hover {
+		color: $secondary-color;
+	}
+}
+
+@media only screen and (max-width : 991px) {
+	.navbar-toggle {
+		background-color: $primary-color;
+	}
+	.navbar-header{
+		background: $primary-color;
+	}
+	.navbar-nav {
+		li {
+			.dropdown-menu{
+				li {
+					a {
+						&:hover, &:focus {
+							color: $primary-color;
+						}
+					}
+				}
+				> .active > a, > .active > a:hover, > .active > a:focus {
+					color: $primary-color;
+				}
+			}
+		}
+		> li.active a, > li > a:hover, > li > a:focus {
+			color: $primary-color;
+		}
+	}
+	.site-header  {
+		.navbar-collapse {
+			color: $primary-color;
+		}
+		&.is-transparent {
+			.navbar-nav > li.active > a, .navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+				color: $primary-color;
+			}
+		} 
+		&.header-s2{
+			.top-bar-wrap{
+				border-bottom:1px solid $bg-color-light;
+			}
+			.navbar-collapse{
+				ul.nav{
+					background: #fff;
+				}
+			}
+		}
+	}
+}
+.wgs-box {
+	a{
+		&:hover,&:focus{
+			color:$primary-color;
+		}
+	}
+	.wgs-search{
+		.form-group{
+			.search-btn{
+				&:hover{
+					color: $primary-color;
+				}
+			}
+		}
+	}
+	.tag-list{
+		li{
+			a{
+				&:hover{
+					border-color:$primary-color;
+				}
+			}
+		}
+	}
+}
+
+.sidebar-right{
+	a{
+		&:hover,&:focus{
+			color:$primary-color;
+		}
+	}
+}
+
+.btn{
+	border: 2px solid $primary-color;
+	background-color: $primary-color;
+	&:hover, &:focus {
+		border-color: $primary-color;
+	}
+	&.btn-alt {
+		background: $primary-color;
+		border-color: $primary-color;
+		&:hover, &:focus {
+			border-color: $primary-color;
+		}
+	}
+	&.btn-outline{
+		&:hover, &:focus {
+			background: $primary-color;
+			border-color: $primary-color;
+		}
+		&.btn-alt {
+			&:hover, &:focus {
+				color: $primary-color;
+			}
+		}
+		&.btn-light {
+			&:hover, &:focus {
+				background: $primary-color;
+				border-color: $primary-color;
+			}
+			&.btn-alt:hover, &.btn-alt:focus {
+				background: $secondary-color;
+				border-color: $secondary-color;
+			}
+		}
+		&.btn-color {
+			color: $primary-color;
+			border-color: $primary-color;
+			&:hover, &:focus {
+				background: $primary-color;
+				border-color: $primary-color;
+			}
+			&.btn-alt:hover, &.btn-alt:focus {
+				background: $secondary-color;
+				border-color: $secondary-color;
+			}
+		}
+	}
+	&.btn-light:not(.btn-outline) {
+		color: $primary-color;
+		&:hover, &:focus {
+			background: $primary-color;
+			border-color: $primary-color;
+			.bg-primary & {
+				background: $secondary-color;
+				border-color: $secondary-color;
+			}
+		}
+		&.btn-alt {
+			color: $secondary-color;
+			&:hover, &:focus {
+				background: $secondary-color;
+				border-color: $secondary-color;
+				.bg-secondary & {
+					background: $primary-color;
+					border-color: $primary-color;
+				}
+			}
+		}
+	}
+}
+.btn-link{
+	color: $primary-color;
+	&:hover {
+		color: $primary-color;
+	}
+}
+.btn-icon{
+	background: $primary-color;
+}
+.box{
+	&.box-alt-bg{
+		background: $bg-color-light;
+	}
+	&.box-small-dot{
+		&:hover{
+			background: $primary-color;
+		}
+		.font-icon{
+			&:before{
+				background: $primary-color;
+			}
+		}
+	}
+}
+.box-alt{
+	.pe{
+		color:$primary-color;
+	}
+	&.box-dot{
+		.image-icon:before{
+			background: $primary-color;
+		}
+	}
+}
+.tab-custom{
+	.active {
+		.box-alt{
+			h5{
+				color: $primary-color;
+			}
+		}
+	}
+}
+.box-side-icon{
+	.pe{
+		color:$primary-color;
+	}
+}
+.box-miner{
+	h4,.box-miner-title{
+		background: $primary-color;
+	}
+	.box-miner-action{
+		background: rgba($primary-color,.02);
+		&:hover{
+			background: $primary-color;
+		}
+	}
+}
+.pricing-box{
+	background: $bg-color-light;
+	&.highlited{
+		background: $primary-color;
+	}
+	.pricing-sap{
+		&:before{
+			background: $primary-color;
+		}
+		&:after{
+			background: $primary-color;
+		}
+	}
+}
+.text-block{
+	h2{
+		span{
+			color:$primary-color;
+		}
+	}
+	ul{
+		li{
+			&:before{
+				color:$primary-color;
+			}
+		}
+	}
+}
+.icon-block{
+	ul {
+		li{
+			&:before{
+				color:$primary-color;
+			}
+		}
+	}
+}
+.video-block{
+	.video-play{
+		background: $primary-color;
+		&:hover,&:focus{
+			color: $primary-color;
+		}
+	}
+}
+.team-member{
+	.team-thumb{
+		.team-social{
+			li{
+				a{
+					&:hover{
+						color:$primary-color;
+						border-color:$primary-color;
+					}
+				}
+			}
+		}
+	}
+	&:hover{
+		.team-info{
+			background: $primary-color;
+		}
+	}
+	.team-info{
+		.team-name{
+			color:$primary-color;
+		}
+	}
+}
+.testimonial-item{
+	.client-photo{
+		.fa{
+			color:$primary-color;
+		}
+	}
+	&.testimonial-s2{
+		.client-photo{
+			border-color:$primary-color;
+		}
+	}
+}
+.blog-post{
+	.post-entry{
+		h5 a{
+			&:hover{
+				color:$primary-color;
+			}
+		}
+	}
+}
+.post-single{
+	ul li{
+		&:before{
+			color:$primary-color;
+		}
+	}
+}
+.steps{
+	.step-number{
+		background: $primary-color;
+	}
+}
+.active{
+	.steps{
+		h4{
+			color: $primary-color;
+		}
+	}
+}
+.cta-small {
+	background: $secondary-color;
+}
+.contact-information{
+	.contact-entry{
+		h6{
+			span{
+				color:$primary-color;
+			}
+		}
+	}	
+}

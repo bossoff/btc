@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-Regular.eot');
+    src: local('Quicksand Regular'), local('Quicksand-Regular')
+		url('../fonts/Quicksand-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Quicksand-Regular.woff2') format('woff2'),
+        url('../fonts/Quicksand-Regular.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-Medium.eot');
+    src: local('Quicksand Medium'), local('Quicksand-Medium'),
+		url('../fonts/Quicksand-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Quicksand-Medium.woff2') format('woff2'),
+        url('../fonts/Quicksand-Medium.woff') format('woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-Light.eot');
+    src: local('Quicksand Light'), local('Quicksand-Light'),
+		url('../fonts/Quicksand-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Quicksand-Light.woff2') format('woff2'),
+        url('../fonts/Quicksand-Light.woff') format('woff');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-Bold.eot');
+    src: local('Quicksand Bold'), local('Quicksand-Bold'),
+		url('../fonts/Quicksand-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Quicksand-Bold.woff2') format('woff2'),
+        url('../fonts/Quicksand-Bold.woff') format('woff');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Light.eot');
+    src: local('Open Sans Light'), local('OpenSans-Light'),
+		url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Light.woff2') format('woff2'),
+        url('../fonts/OpenSans-Light.woff') format('woff');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Regular.eot');
+    src: local('Open Sans Regular'), local('OpenSans-Regular'),
+		url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('../fonts/OpenSans-Regular.woff') format('woff');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../OpenSans-SemiBold.eot');
+    src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'),
+        url('../OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../OpenSans-SemiBold.woff2') format('woff2'),
+        url('../OpenSans-SemiBold.woff') format('woff'),
+        url('../OpenSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}

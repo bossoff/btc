@@ -1,0 +1,366 @@
+// box
+.box{
+	transition:all .5s ease;
+	&.box-alt-bg{
+		background: $bg-color-light;
+	}
+	padding:30px;
+	.box-icon{
+		max-width: 60px;
+		margin: 0 auto 25px;
+	}
+	&.box-small-dot{
+		&:hover{
+			background: $primary-color;
+			h4,h6,p,.pe{
+				color:#fff;
+			}
+			.font-icon:before{
+				background: #fff;
+				opacity:.4;
+			}
+		}
+		.font-icon{
+			margin-bottom: 17px;
+			display:inline-block;
+			position: relative;
+			&:before{
+				position: absolute;
+				content:"";
+				background: $primary-color;
+				height:26px;
+				width:26px;
+				border-radius: 50%;
+				top:8px;
+				left: 0;
+				opacity:.6;
+				z-index: 4;
+				transition:all .5s ease;
+			}
+			.pe{
+				font-size:42px;
+				position: relative;
+				z-index: 5;
+				transition:all .5s ease;
+			}
+		}
+	}
+	h4,h6{
+		margin-bottom: 14px;
+		transition:all .5s ease;
+	}
+	p{
+		transition:all .5s ease;
+	}
+}
+
+// box alt
+.box-alt{
+	padding: 0 30px 70px;
+	&:last-of-type{
+		padding-bottom:0;
+	}
+	.pe{
+		color:$primary-color;
+		font-size: 42px;
+		padding-bottom: 15px;
+	}
+	.image-icon{
+		position: relative;
+		width:50px;
+		margin: 0 auto 23px;
+		img{
+			position: relative;
+			z-index: 5;
+		}
+	}
+	&.box-dot{
+		&.four-column{
+			padding: 0 0 70px;
+		}
+		position: relative;
+		.image-icon:before{
+			position: absolute;
+			content:"";
+			background: $primary-color;
+			height:45px;
+			width:45px;
+			border-radius: 50%;
+			top:-4px;
+			left: -10px;
+			opacity:.6;
+			z-index: 4;
+		}
+	}
+	&.box-direction:after{
+		position: absolute;
+		left: calc(50% + 10px);
+		width:100%;
+	}
+	&.box-direction-one:after{
+		content:url(../images/direction-dots-a.png);
+		top:-8px;
+	}
+	&.box-direction-two:after{
+		content:url(../images/direction-dots-b.png);
+		top:12px;
+	}
+}
+
+.tab-custom{
+	.box-alt{
+		cursor: pointer;
+	}
+	.active {
+		.box-alt{
+			cursor: default;
+			h5{
+				color: $primary-color;
+				transition:all .5s ease;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width : 1199px) {
+	.box-alt{
+		&.box-direction:after{
+			width:80%;
+		}
+	}
+}
+
+@media only screen and (max-width : 991px) {
+	.box-direction:after{
+		display:none;
+	}
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+	.box-alt{
+		&.img{
+			padding-left: 120px;
+			padding-right: 120px;
+		}
+	}
+}
+@media only screen and (max-width : 767px) {
+	.box-alt{
+		padding: 0 0 70px;
+	}
+}
+
+// Box Side Icon
+.box-side-icon{
+	position: relative;
+	padding-left: 83px;
+	.pe{
+		font-size: 48px;
+		color:$primary-color;
+		position: absolute;
+		left: 0;
+		top:50%;
+		transform: translateY(-50%);
+	}
+	p{
+		margin-bottom: 8px;
+	}
+	.read-more{
+		font-size: 14px;
+	}
+}
+
+// Service Box
+
+.service-box{
+	.service-thumb img{
+		border-radius: 5px 5px 0 0;
+	}
+	.service-entry{
+		position: relative;
+		padding: 30px;
+		h5{
+			color:$default-color;
+			text-transform: capitalize;
+		}
+		.btn-icon{
+			position: absolute;
+			left: 50%;
+			bottom:-25px;
+			margin-left: -25px;
+			&:hover{
+				background: $default-color;
+				color:#fff
+			}
+		}
+	}
+}
+
+// box miner
+.box-miner{
+	background: #fff;
+	border-radius: 4px;
+	box-shadow: 0 12px 15px rgba(0,0,0,.05);
+	&.box-miner-alt{
+		box-shadow: 0 6px 23px -2px rgba(0, 0, 0, 0.11);
+		h4,.box-miner-title{
+			color: $default-color;
+			background: #fff;
+			border-bottom: 1px solid #f8f8f8;
+			padding-bottom: 35px;
+			border-radius: 4px 4px 0 0;
+		}
+		.box-miner-list{
+			li{
+				padding: 10px 30px;
+			}
+		}
+	}
+	.box-miner-price{
+		padding-top: 40px;
+		text-align:center;
+		font-size:3.2em;
+		line-height: 1em;
+		.price-unit{
+			font-size:.4em;
+			line-height: 1.3em;
+			vertical-align: top;
+		}
+		.price-for{
+			font-size:.4em;
+			vertical-align: baseline;
+		}
+	}
+	h4,.box-miner-title{
+		color: #fff;
+		background: $primary-color;
+		margin-bottom: 0;
+		padding: 14px 0;
+		border-radius: 4px 4px 0 0;
+	}
+	.box-miner-image{
+		img{
+			border-radius: 0;
+		}
+	}
+	.box-miner-list{
+		border-radius: 0 0 4px 4px;
+		li{
+			display: block;
+			border-bottom:1px solid #f8f8f8;
+			padding: 10px 20px;
+			&:last-of-type{
+				border-bottom:none;
+				padding: 0;
+				border-radius: 0 0 4px 4px;
+			}
+		}
+	}
+	.box-miner-cta{
+		padding: 25px 0;
+	}
+	.box-miner-action{
+		color: rgba($default-color,.7);
+		text-transform: uppercase;
+		font-size:18px;
+		text-align:center;
+		background: rgba($primary-color,.02);
+		display:block;
+		font-weight: 600;
+		padding: 22px 0;
+		&:hover{
+			color: $primary-color;
+		}
+	}
+}
+
+// Pricing Box
+.pricing-box{
+	background: $bg-color-light;
+	padding: 40px 0;
+	text-align:center;
+	position: relative;
+	transition: all .3s ease;
+	border-radius: 4px;
+	&.hover-up:hover{
+		transform: translateY(-12px);
+	}
+	&.hover-scale:hover{
+		transform: scale(1.05);
+		z-index: 4;
+	}
+	&.tup{
+		transform: translateY(-12px);
+		padding: 52px 0;
+	}
+	span{
+		display:block;
+	}
+	&.highlited{
+		background: $primary-color;
+		.pricing-sap:before,.pricing-sap:after{
+			background: #fff;
+		}
+	}
+	.pricing-title{
+		font-size:22px;
+		line-height: 1.1;
+		font-weight: 700;
+	}
+	.pricing-sub-title{
+		font-weight: 500;
+		margin:15px 0;
+	}
+	.pricing-sap{
+		height:10px;
+		position: relative;
+		margin-bottom: 20px;
+		&:before{
+			position: absolute;
+			height: 2px;
+			width: 54px;
+			background: $primary-color;
+			top:4px;
+			left:50%;
+			margin-left: -27px;
+			content:"";
+		}
+		&:after{
+			position: absolute;
+			height: 10px;
+			width: 10px;
+			background: $primary-color;
+			top:0;
+			left:50%;
+			margin-left: -5px;
+			content:"";
+			border-radius: 50%;
+		}
+	}
+	.pricing-price{
+		font-size:26px;
+		line-height: 1.1;
+		font-weight: 700;
+	}
+	.btn{
+		margin:25px auto 0;
+		padding: 8px 15px;
+	}
+}
+
+// Logo Item
+.logo-item {
+	background: #fff;
+	@include border-radius();
+	border: 1px solid rgba(0,0,0,0.04);
+	text-align: center;
+	padding: 10px;
+	line-height:1;
+	img {
+		border:0 none;
+		border-radius: inherit;
+		width: 100%;
+		max-width: 190px;
+		margin:0 auto;
+	}
+}

@@ -1,0 +1,177 @@
+// Ticker
+.btc-ticker{
+	max-height:110px;
+	.owl-item{
+		margin-right: 0 !important;
+	}
+}
+.ticker-item{
+	.btcwdgt-price{
+		&.btcwdgt{
+			background: $copyright-bgcolor !important;
+			max-width: 100% !important;
+			margin: 0 !important;
+			box-shadow: none !important;
+			.arrow{
+				left: 100px !important;
+				top:28px !important;
+			}
+		}
+		.btcwdgt-edge{
+			width: 1px !important;
+			background: #161f40 !important;
+			position: absolute !important;
+			height: 100% !important;
+			left: -1px !important;
+		}
+		.btcwdgt-body{
+			margin: 0 !important;
+			height:48px !important;
+			padding-top: 45px !important;
+			padding-bottom: 15px !important;
+			position: relative !important;
+			ul{
+				margin-left: 15px !important;
+				height:48px !important;
+				overflow: hidden !important;
+			}
+			> span{
+				position: absolute !important;
+				top:10px !important;
+				left: 35px !important;
+			}
+		}
+		.btcwdgt-footer{
+			display:none !important;
+		}
+	}
+}
+
+// Trending View Widget
+.trendingview-chart{
+	height:400px;
+	div{
+		> iframe{
+			padding-bottom: 0 !important;
+			+ span{
+				display:none !important;
+			}
+		}
+	}
+}
+#tv-medium-widget-one{
+	height:400px !important;
+	> div div:last-of-type{
+		display:none !important;
+	}
+}
+
+// Trending View Ticker
+.trendingview-ticker{
+	div{
+		height:72px !important;
+		> iframe{
+			padding-bottom: 0 !important;
+			+ span{
+				display:none !important;
+			}
+		}
+	}
+	.tv-widget-ticker {
+		background-color: #072D58 !important;
+	}
+}
+
+
+// Calculator
+.bitcoin-calculator{
+	.priceLabel,.histoTitleConverter,.poweredByWrapper{
+		display: none;
+	}
+	.ccc-converter{
+		> div{
+			background: transparent !important;
+			border:none !important;
+			padding: 0 !important;
+		}
+	}
+	.section-converter-ccc{
+		margin-bottom: 20px;
+		position: relative;
+		&:last-child{
+			&:after{
+				position: absolute;
+				top:23px;
+				right:15px;
+				height:0;
+				width:0;
+				z-index:2;
+				content:"";
+				border-top:5px solid $default-color;
+				border-left:5px solid transparent;
+				border-right:5px solid transparent;
+			}
+		}
+		.fromSymbolLabel{
+			line-height:48px;
+		}
+		.styledSelect{
+			height: 50px !important;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+		}
+		> div {
+			input{
+				height: 50px;
+				border-radius:4px 0 0 4px !important;
+				padding-left: 15px;
+			}
+		}
+	}
+}
+
+.cryptonatorwidget{
+	border:none !important;
+	padding: 0 !important;
+	margin: 0 -10px;
+	font-family: $font-primary !important;
+	div{
+		padding-top: 0 !important;
+		display:none;
+	}
+	table{
+		margin-bottom: 15px;
+	}
+	td{
+		padding: 0 10px;
+		position: relative;
+		&:last-of-type{
+			&:after{
+				position: absolute;
+				top:33px;
+				right:30px;
+				height:0;
+				width:0;
+				z-index:2;
+				content:"";
+				border-top:5px solid $default-color;
+				border-left:5px solid transparent;
+				border-right:5px solid transparent;
+			}
+		}
+		
+	}
+	input,select{
+		border:none;
+		border-radius: 4px;
+		padding:0 15px;
+		height: 50px !important;
+		text-transform: capitalize;
+		margin: 10px 0;
+		color:$default-color;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+	}
+}
